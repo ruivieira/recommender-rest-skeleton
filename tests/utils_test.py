@@ -32,7 +32,7 @@ class UtilsTests(unittest.TestCase):
         os.environ['FOO'] = 'foo'
         foo = get_arg(env='FOO', default='')
 
-        assert_equal(foo, 'foo')
+        assert_equal(foo, 'foo2')
 
     def get_args_default_test(self):
         """Test if the returned args is the default if the env variable does
